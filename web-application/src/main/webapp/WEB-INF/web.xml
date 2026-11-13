@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="6.0" metadata-complete="false">
+  <display-name>SCASP</display-name>
+  <session-config>
+    <session-timeout>20</session-timeout>
+    <cookie-config><http-only>true</http-only></cookie-config>
+    <tracking-mode>COOKIE</tracking-mode>
+  </session-config>
+  <error-page><error-code>404</error-code><location>/WEB-INF/views/error.jsp</location></error-page>
+  <error-page><error-code>500</error-code><location>/WEB-INF/views/error.jsp</location></error-page>
+</web-app>

@@ -1,0 +1,764 @@
+Nov 13, 2026 9:31:41 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-1"]
+Nov 13, 2026 9:31:41 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Nov 13, 2026 9:31:41 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/10.1.55 (Ubuntu)]
+Nov 13, 2026 9:31:41 AM org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+INFO: No global web.xml found
+Nov 13, 2026 9:31:41 AM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/usr/share/java/lucene-core-8.7.0.jar] from classloader hierarchy
+java.nio.file.NoSuchFileException: /usr/share/java/lucene-core-8.7.0.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1445)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:64)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:391)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:332)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:300)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:242)
+	at org.apache.catalina.startup.ContextConfig.processJarsForWebFragments(ContextConfig.java:2039)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1258)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:971)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:288)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4372)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436)
+	at scasp.web.WebServer.start(WebServer.java:34)
+	at scasp.web.WebTest.start(WebTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:412)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:410)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:216)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.executeTests(ConsoleTestExecutor.java:102)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.lambda$execute$1(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.invoke(CustomContextClassLoaderExecutor.java:35)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.execute(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:61)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:27)
+	at org.junit.platform.console.options.BaseCommand.call(BaseCommand.java:74)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:129)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:93)
+	at org.junit.platform.console.options.MainCommand.call(MainCommand.java:77)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.run(MainCommand.java:125)
+	at org.junit.platform.console.options.CommandFacade.run(CommandFacade.java:36)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:57)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:42)
+	at org.junit.platform.console.ConsoleLauncher.main(ConsoleLauncher.java:35)
+
+Nov 13, 2026 9:31:41 AM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/usr/share/java/slf4j-api.jar] from classloader hierarchy
+java.nio.file.NoSuchFileException: /usr/share/java/slf4j-api.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1445)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:64)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:391)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:332)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:300)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:242)
+	at org.apache.catalina.startup.ContextConfig.processJarsForWebFragments(ContextConfig.java:2039)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1258)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:971)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:288)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4372)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436)
+	at scasp.web.WebServer.start(WebServer.java:34)
+	at scasp.web.WebTest.start(WebTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:412)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:410)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:216)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.executeTests(ConsoleTestExecutor.java:102)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.lambda$execute$1(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.invoke(CustomContextClassLoaderExecutor.java:35)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.execute(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:61)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:27)
+	at org.junit.platform.console.options.BaseCommand.call(BaseCommand.java:74)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:129)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:93)
+	at org.junit.platform.console.options.MainCommand.call(MainCommand.java:77)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.run(MainCommand.java:125)
+	at org.junit.platform.console.options.CommandFacade.run(CommandFacade.java:36)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:57)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:42)
+	at org.junit.platform.console.ConsoleLauncher.main(ConsoleLauncher.java:35)
+
+Nov 13, 2026 9:31:42 AM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/usr/share/java/lucene-core-8.7.0.jar] from classloader hierarchy
+java.nio.file.NoSuchFileException: /usr/share/java/lucene-core-8.7.0.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1445)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:64)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:391)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:332)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:300)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:242)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:248)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:98)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:81)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4456)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436)
+	at scasp.web.WebServer.start(WebServer.java:34)
+	at scasp.web.WebTest.start(WebTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:412)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:410)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:216)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.executeTests(ConsoleTestExecutor.java:102)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.lambda$execute$1(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.invoke(CustomContextClassLoaderExecutor.java:35)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.execute(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:61)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:27)
+	at org.junit.platform.console.options.BaseCommand.call(BaseCommand.java:74)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:129)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:93)
+	at org.junit.platform.console.options.MainCommand.call(MainCommand.java:77)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.run(MainCommand.java:125)
+	at org.junit.platform.console.options.CommandFacade.run(CommandFacade.java:36)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:57)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:42)
+	at org.junit.platform.console.ConsoleLauncher.main(ConsoleLauncher.java:35)
+
+Nov 13, 2026 9:31:42 AM org.apache.tomcat.util.scan.StandardJarScanner processURLs
+WARNING: Failed to scan [file:/usr/share/java/slf4j-api.jar] from classloader hierarchy
+java.nio.file.NoSuchFileException: /usr/share/java/slf4j-api.jar
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:171)
+	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1445)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:180)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:345)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:64)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:391)
+	at org.apache.tomcat.util.scan.StandardJarScanner.processURLs(StandardJarScanner.java:332)
+	at org.apache.tomcat.util.scan.StandardJarScanner.doScanClassPath(StandardJarScanner.java:300)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:242)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:248)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:98)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:81)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4456)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:436)
+	at scasp.web.WebServer.start(WebServer.java:34)
+	at scasp.web.WebTest.start(WebTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeAllMethod(TimeoutExtension.java:70)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllMethods$13(ClassBasedTestDescriptor.java:412)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllMethods(ClassBasedTestDescriptor.java:410)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:216)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.executeTests(ConsoleTestExecutor.java:102)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.lambda$execute$1(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.tasks.CustomContextClassLoaderExecutor.invoke(CustomContextClassLoaderExecutor.java:35)
+	at org.junit.platform.console.tasks.ConsoleTestExecutor.execute(ConsoleTestExecutor.java:71)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:61)
+	at org.junit.platform.console.options.ExecuteTestsCommand.execute(ExecuteTestsCommand.java:27)
+	at org.junit.platform.console.options.BaseCommand.call(BaseCommand.java:74)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:129)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:93)
+	at org.junit.platform.console.options.MainCommand.call(MainCommand.java:77)
+	at org.junit.platform.console.shadow.picocli.CommandLine.executeUserObject(CommandLine.java:1953)
+	at org.junit.platform.console.shadow.picocli.CommandLine.access$1300(CommandLine.java:145)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at org.junit.platform.console.shadow.picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at org.junit.platform.console.shadow.picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at org.junit.platform.console.shadow.picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.junit.platform.console.options.MainCommand.runCommand(MainCommand.java:137)
+	at org.junit.platform.console.options.MainCommand.run(MainCommand.java:125)
+	at org.junit.platform.console.options.CommandFacade.run(CommandFacade.java:36)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:57)
+	at org.junit.platform.console.ConsoleLauncher.run(ConsoleLauncher.java:42)
+	at org.junit.platform.console.ConsoleLauncher.main(ConsoleLauncher.java:35)
+
+Nov 13, 2026 9:31:42 AM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+SCASP started. TCP gateway 43345, RMI registry 43527, UDP notifications 9091
+RMI admin token (for status changes): 088d18254c733cd9ee04173c
+Nov 13, 2026 9:31:43 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-127.0.0.1-auto-1-44131"]
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /api/courses -> 401 (1 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /api/login -> 401 (40 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /api/login -> 200 (19 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /api/courses -> 200 (17 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /api/register -> 409 (23 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /api/campus-services -> 200 (9 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /api/unknown -> 404 (0 ms)
+Nov 13, 2026 9:31:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (31 ms)
+Nov 13, 2026 9:31:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 403 (1521 ms)
+Nov 13, 2026 9:31:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /reports -> 403 (1 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (393 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /courses -> 403 (8 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 400 (1 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (12 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 400 (7 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (8 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 404 (10 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /does-not-exist -> 404 (0 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (35 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (13 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /courses -> 400 (2 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /reports -> 200 (235 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (42 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (37 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (25 ms)
+Nov 13, 2026 9:31:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /requests -> 302 (12 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /requests -> 200 (266 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (11 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /requests -> 302 (8 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (12 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /requests -> 302 (5 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /requests -> 200 (6 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (7 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /announcements -> 302 (2 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /announcements -> 200 (136 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /reports -> 200 (18 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (42 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (35 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (3 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 302 (7 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /registrations -> 200 (156 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (11 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 302 (9 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /registrations -> 200 (4 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (11 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /registrations -> 302 (9 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (4 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (24 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (8 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /requests -> 302 (7 ms)
+Nov 13, 2026 9:31:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /requests -> 200 (2 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 302 (26 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /dashboard -> 200 (144 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 200 (6 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /logout -> 302 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /dashboard -> 302 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /health -> 200 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 302 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET / -> 302 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: POST /login -> 401 (128 ms)
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: GET /courses -> 302 (0 ms)
+Nov 13, 2026 9:31:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-1-44131"]
+Nov 13, 2026 9:31:47 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service [Tomcat]
+Nov 13, 2026 9:31:47 AM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalsForLeaks
+WARNING: You need to add "--add-opens=java.base/java.lang=ALL-UNNAMED" to the JVM command line arguments to enable ThreadLocal memory leak detection. Alternatively, you can suppress this warning by disabling ThreadLocal memory leak detection.
+Nov 13, 2026 9:31:47 AM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesRmiTargets
+WARNING: You need to add "--add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED" to the JVM command line arguments to enable RMI Target memory leak detection. Alternatively, you can suppress this warning by disabling RMI Target memory leak detection.
+Nov 13, 2026 9:31:47 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-1-44131"]
+Nov 13, 2026 9:31:47 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-1-44131"]
+[36m?[0m
+[36m??[0m [36mJUnit Platform Suite[0m [32m?[0m
+[36m??[0m [36mJUnit Jupiter[0m [32m?[0m
+[36m?  ??[0m [36mJdbcTest[0m [32m?[0m
+[36m?  ?  ??[0m [34mtransactionRollsBackEverythingOnFailure()[0m [32m?[0m
+[36m?  ?  ??[0m [34mconstraintsAreEnforcedByTheDatabase()[0m [32m?[0m
+[36m?  ?  ??[0m [34mbusinessFlowMatchesTheInMemoryRules()[0m [32m?[0m
+[36m?  ?  ??[0m [34mtransactionCommitsAllStepsTogether()[0m [32m?[0m
+[36m?  ?  ??[0m [34mconcurrentRegistrationNeverExceedsCapacityInTheDatabase()[0m [32m?[0m
+[36m?  ?  ??[0m [34mscriptsLoadSampleDataAndRunTwiceSafely()[0m [32m?[0m
+[36m?  ?  ??[0m [34msqlInjectionTextIsTreatedAsPlainData()[0m [32m?[0m
+[36m?  ??[0m [36mCoreTest[0m [32m?[0m
+[36m?  ?  ??[0m [34mloginUsesHashedPasswords()[0m [32m?[0m
+[36m?  ?  ??[0m [34mfillCourseThenWaitlistThenWithdrawPromotes()[0m [32m?[0m
+[36m?  ?  ??[0m [34mregistrationEqualityIgnoresTimeSoSetRejectsDuplicates()[0m [32m?[0m
+[36m?  ?  ??[0m [34minvalidOperationsAreRejectedWithClearKinds()[0m [32m?[0m
+[36m?  ?  ??[0m [34mannouncementsAreFilteredByAudience()[0m [32m?[0m
+[36m?  ?  ??[0m [34mcapacityCannotDropBelowRegistrationsAndRaisingItPromotes()[0m [32m?[0m
+[36m?  ?  ??[0m [34mserviceBoundaryReturnsUnmodifiableCopiesAndAuditsChanges()[0m [32m?[0m
+[36m?  ?  ??[0m [34msearchAndSortStrategies()[0m [32m?[0m
+[36m?  ?  ??[0m [34mrequestsAreOrderedByPriorityThenAgeAndFollowStatusRules()[0m [32m?[0m
+[36m?  ??[0m [36mGatewayTest[0m [32m?[0m
+[36m?  ?  ??[0m [34mbasicCommandsAndInfo()[0m [32m?[0m
+[36m?  ?  ??[0m [34mloginRegisterWithdrawAndErrors()[0m [32m?[0m
+[36m?  ?  ??[0m [34mmalformedMessagesGetErrorsNotCrashes()[0m [32m?[0m
+[36m?  ?  ??[0m [34mthreeFailedLoginsCloseTheConnection()[0m [32m?[0m
+[36m?  ?  ??[0m [34mshutdownClosesOpenConnections()[0m [32m?[0m
+[36m?  ?  ??[0m [34mudpNotificationReachesAListener()[0m [32m?[0m
+[36m?  ?  ??[0m [34mfetcherOnlyReadsAuthorisedResourcesAndHandlesFailure()[0m [32m?[0m
+[36m?  ?  ??[0m [34midleClientsAreDisconnectedByTimeout()[0m [32m?[0m
+[36m?  ?  ??[0m [34mabruptDisconnectDoesNotAffectOtherClients()[0m [32m?[0m
+[36m?  ?  ??[0m [34mmanyClientsRegisterAtOnceAndCapacityHolds()[0m [32m?[0m
+[36m?  ??[0m [36mProcessorTest[0m [32m?[0m
+[36m?  ?  ??[0m [34mcapacityHoldsUnderConcurrencyVirtualThreads()[0m [32m?[0m
+[36m?  ?  ??[0m [34morderlyShutdownFinishesRunningWorkThenRefusesNewWork()[0m [32m?[0m
+[36m?  ?  ??[0m [34mcapacityHoldsUnderConcurrencyPlatformThreads()[0m [32m?[0m
+[36m?  ?  ??[0m [34mfullQueueRejectsWorkAndStatsCountIt()[0m [32m?[0m
+[36m?  ?  ??[0m [34mthreadDumpListsThreads()[0m [32m?[0m
+[36m?  ?  ??[0m [34mtimeoutCancelsTheTaskAndReportsIt()[0m [32m?[0m
+[36m?  ?  ??[0m [34mbusinessExceptionsPassThroughUnchanged()[0m [32m?[0m
+[36m?  ?  ??[0m [34mconcurrentWithdrawalsPromoteExactlyOncePerSeat()[0m [32m?[0m
+[36m?  ??[0m [36mWebTest[0m [32m?[0m
+[36m?  ?  ??[0m [34mjsonApiForTheMobileClient()[0m [32m?[0m
+[36m?  ?  ??[0m [34msecurityControlsCsrfRolesInputAndMissingResources()[0m [32m?[0m
+[36m?  ?  ??[0m [34mstaffManagesRequestsAnnouncementsAndSeesReports()[0m [32m?[0m
+[36m?  ?  ??[0m [34mstudentRegistersJoinsWaitingListAndSeesIt()[0m [32m?[0m
+[36m?  ?  ??[0m [34muntrustedTextIsEscapedInPages()[0m [32m?[0m
+[36m?  ?  ??[0m [34mlogoutEndsTheSession()[0m [32m?[0m
+[36m?  ?  ??[0m [34mhealthIsPublicAndProtectedPagesRedirectToLogin()[0m [32m?[0m
+[36m?  ?  ??[0m [34mwrongPasswordGives401AndNoSession()[0m [32m?[0m
+[36m?  ??[0m [36mRmiTest[0m [32m?[0m
+[36m?     ??[0m [34mclientReadsReportsChangesCourseWithTokenAndHandlesFailures()[0m [32m?[0m
+[36m??[0m [36mJUnit Vintage[0m [32m?[0m
+
+Test run finished after 14914 ms
+[         9 containers found      ]
+[         0 containers skipped    ]
+[         9 containers started    ]
+[         0 containers aborted    ]
+[         9 containers successful ]
+[         0 containers failed     ]
+[        43 tests found           ]
+[         0 tests skipped         ]
+[        43 tests started         ]
+[         0 tests aborted         ]
+[        43 tests successful      ]
+[         0 tests failed          ]
+
+
+WARNING: Delegated to the 'execute' command.
+         This behaviour has been deprecated and will be removed in a future release.
+         Please use the 'execute' command directly.

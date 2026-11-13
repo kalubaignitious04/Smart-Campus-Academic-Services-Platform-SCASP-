@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee" version="3.0">
+  <tlib-version>1.0</tlib-version>
+  <short-name>scasp</short-name>
+  <uri>urn:scasp</uri>
+  <function><name>h</name><function-class>scasp.web.Html</function-class>
+    <function-signature>java.lang.String h(java.lang.Object)</function-signature></function>
+  <function><name>time</name><function-class>scasp.web.Html</function-class>
+    <function-signature>java.lang.String time(java.lang.Object)</function-signature></function>
+</taglib>

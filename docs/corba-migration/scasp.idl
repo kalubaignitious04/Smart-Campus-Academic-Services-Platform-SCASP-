@@ -1,0 +1,23 @@
+// Stage 9: IDL equivalent of two AdminService (RMI) operations.
+module scasp {
+  enum CourseStatus { OPEN, CLOSED, CANCELLED };
+
+  struct CourseLine {
+    string code;
+    string title;
+    long   capacity;
+    long   registered;
+    long   waiting;
+    CourseStatus status;
+  };
+  typedef sequence<CourseLine> CourseLineSeq;
+
+  exception NotAuthorised { string reason; };
+  exception InvalidRequest { string reason; };
+
+  interface Admin {
+    CourseLineSeq capacityReport();
+    void setCourseStatus(in string adminToken, in string courseCode, in CourseStatus status)
+        raises (NotAuthorised, InvalidRequest);
+  };
+};
